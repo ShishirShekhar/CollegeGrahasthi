@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import whiteLogo from '../../img/whiteLogo.png';
-import Button from '../Button';
+import whiteLogo from '../../../img/whiteLogo.png';
+import Button from '../../Button';
 
 const Nav = () => {
     return (
@@ -14,7 +14,7 @@ const Nav = () => {
                     <Link to="/other">Contact us</Link>
                 </div>
                 <div className='w-3/12'>
-                    <Button value="Sign up" />
+                    <Button value="Sign up" to="/other" />
                 </div>
             </div>
         </div>

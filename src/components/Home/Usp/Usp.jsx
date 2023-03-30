@@ -1,5 +1,5 @@
 import UspPoint from "./UspPoint";
-import verified from "../../img/verified.png";
+import verified from "../../../img/verified.png";
 
 const Usp = () => {
   return (

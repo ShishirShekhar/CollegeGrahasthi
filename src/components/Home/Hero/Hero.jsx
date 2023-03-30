@@ -1,5 +1,5 @@
 import Nav from "./Nav";
-import Search from '../Search';
+import Search from '../../Search';
 
 const Hero = () =>  {
     return (
