@@ -5,7 +5,7 @@ import Sample from "../components/Home/Sample";
 import Info from "../components/Home/Info";
 import Stats from "../components/Home/Stats/Stats";
 import Ratings from "../components/Home/Ratings/Ratings";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer/Footer";
 // Import all the required data
 import data from "../data";
 // Import all the required image
