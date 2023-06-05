@@ -21,9 +21,9 @@ const uspPoints = [
 
 const Usp = () => {
   return (
-    <div className="p-4 sm:p-8 md:p-12 lg:p-16 xl:p-24 flex flex-col sm:flex-row justify-evenly">
+    <div className="p-4 sm:p-8 md:p-12 lg:p-16 xl:p-24 flex flex-wrap justify-between">
       {uspPoints.map((uspPoint, index) => (
-        <div key={index} className="w-full sm:w-56 text-center">
+        <div key={index} className="text-center mb-8">
           <UspPoint img={uspPoint.img} head={uspPoint.head} desc={uspPoint.desc} />
         </div>
       ))}

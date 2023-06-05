@@ -13,7 +13,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between overflow-hidden">
+    <nav className="flex items-center justify-between">
       <Link to="/">
         <img
           src={whiteLogo}
@@ -51,9 +51,9 @@ const Nav = () => {
         }`}
       ></div>
       <div
-        className={`absolute ${
-          isOpen ? "-right-10" : "-right-96"
-        } md:hidden flex flex-col justify-center mb-4 top-20 items-start gap-4 w-56 h-60 bg-primary bg-opacity-50 rounded-xl px-10`}
+        className={`${
+          isOpen ? "flex" : "hidden"
+        } absolute flex-col justify-center mb-4 top-20 -right-10 items-start gap-4 w-56 h-60 bg-primary bg-opacity-75 rounded-xl px-10`}
       >
         <Link to="/other">Solutions</Link>
         <Link to="/other">Company</Link>

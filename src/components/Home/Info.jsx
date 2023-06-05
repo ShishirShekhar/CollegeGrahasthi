@@ -8,9 +8,9 @@ const Info = (props) => {
       </div>
 
       <div className="sm:w-1/2 sm:pl-8 lg:pl-16">
-        <div className="w-24 h-2 bg-gradient-to-r from-secondary to-primary mb-5 sm:mb-0"></div>
-        <h1 className="text-5xl font-semibold pt-5">{props.title}</h1>
-        <p className="text-gray-300 text-lg font-semibold tracking-wider py-8">{props.content}</p>
+        <div className="w-24 h-2 bg-gradient-to-r from-secondary to-primary mb-5 sm:mb-8"></div>
+        <h1 className="text-4xl sm:text-5xl font-semibold pt-5">{props.title}</h1>
+        <p className="text-gray-500 text-base sm:text-lg font-semibold tracking-wide py-8">{props.content}</p>
 
         {props.button && (
           <div className="flex items-center">

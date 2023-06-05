@@ -1,3 +1,4 @@
+import React from "react";
 import StatCard from "./StatCard";
 
 const Stat = () => {
@@ -16,7 +17,7 @@ const Stat = () => {
         />
       </div>
       <div className="flex flex-col gap-8">
-      <StatCard
+        <StatCard
           value="80K+"
           desc="Lorem ipsum dolor sit amet consectetur adipisicing elit"
           color="text-orange-500"

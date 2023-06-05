@@ -3,12 +3,12 @@ import Stat from "./Stat";
 
 const Stats = () => {
   return (
-    <div className="min-h-screen bg-gray-100 text-black px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
-      <div>
+    <div className="min-h-screen bg-gray-100 text-black px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-10">
+      <div className="pt-10">
         <Stat />
       </div>
 
-      <div className="md:w-1/2 md:pr-16 lg:pr-40">
+      <div className="sm:pr-16 lg:p-20">
         <h1 className="text-4xl font-semibold leading-relaxed mb-8">
           We are providing one of the best rooms for students
         </h1>

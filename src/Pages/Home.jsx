@@ -22,6 +22,7 @@ const Home = () => {
                 content={data.home[0].content}
                 img={cg}
                 left={false}
+                className="w-full sm:w-1/2 sm:pl-8 lg:pl-16"
             />
             <Stats />
             <Info
@@ -30,6 +31,7 @@ const Home = () => {
                 img={cg}
                 left={true}
                 button="Learn more"
+                className="w-full sm:w-1/2 sm:pl-8 lg:pl-16"
             />
             <Ratings />
             <Footer />

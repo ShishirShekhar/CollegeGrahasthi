@@ -10,5 +10,4 @@ const UspPoint = ({ img, head, desc }) => {
   );
 };
 
-
 export default UspPoint;
