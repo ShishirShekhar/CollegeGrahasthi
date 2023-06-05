@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# College Grahasthi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+College Grahasthi is a web application that helps students find the perfect room to rent. It provides a platform for students to search for rooms based on their preferences and requirements. The application also allows property owners to list their available rooms and connect with potential tenants.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Search and Filter**: Students can search for rooms based on location, amenities, and price range. They can apply various filters to narrow down their search results.
 
-### `npm start`
+- **Room Details**: Detailed information is provided for each room listing, including images, amenities, location, and contact information of the property owner.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **User Registration and Authentication**: Students can create an account, log in, and save their favorite listings. Property owners can create an account and manage their room listings.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Rating and Reviews**: Users can leave ratings and reviews for the rooms they have rented, providing valuable feedback to other users.
 
-### `npm test`
+- **Responsive Design**: The application is fully responsive, ensuring a seamless experience across different devices and screen sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **Frontend**: React.js, HTML, CSS, Tailwind CSS
+- **Backend**: Node.js, Express.js, MongoDB
+- **Authentication**: JSON Web Tokens (JWT)
+- **Database**: MongoDB
+- **Deployment**: Heroku (backend), Netlify (frontend)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/your-username/college-grahasthi.git
+   ```
 
-### `npm run eject`
+2. Install the dependencies for the frontend:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd college-grahasthi/frontend
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install the dependencies for the backend:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   cd ../backend
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Set up the environment variables:
+   - Create a `.env` file in the `backend` directory.
+   - Add the following variables to the `.env` file and provide appropriate values:
+     ```
+     PORT=3001
+     MONGODB_URI=<your-mongodb-connection-string>
+     JWT_SECRET=<your-jwt-secret-key>
+     ```
 
-## Learn More
+5. Start the backend server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. Start the frontend development server:
 
-### Code Splitting
+   ```bash
+   cd ../frontend
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+7. Access the application in your browser at `http://localhost:3000`.
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! If you find any issues or have suggestions for improvements, please create a new issue or submit a pull request.
