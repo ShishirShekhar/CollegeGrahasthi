@@ -1,3 +1,5 @@
+import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs';
+
 import SecButton from "../SecButton";
 import logo from "../../img/whiteLogo.png"
 import InfoLinks from "./InfoLinks";
@@ -11,7 +13,7 @@ const Footer = () => {
                         Sign up to recieve the latest info on College Grahasthi products, special offers, and more!
                     </p>
                     <div className="py-10 flex gap-2">
-                        <input type="text" placeholder="Email Address" className="w-full focus:outline-none p-4 rounded-xl" />
+                        <input type="text" placeholder="Email Address" className="w-full focus:outline-none p-4 rounded-xl text-gray-500" />
                         <SecButton value={"Subscribe"} to={""} />
                     </div>
 
@@ -25,8 +27,24 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div>
-                <div className="w-full h-1 bg-white"></div>
+            <div className="w-full h-1 bg-white"></div>
+            <div className="py-4 flex justify-between text-gray-300 text-sm font-semibold">
+                <p>Copyright by 2023 College Grahasthi LLC. All rights reserved</p>
+                <p>Privacy Policy | Terms of Service</p>
+                <div className='text-xl text-white flex justify-between w-36'>
+                    <a href="/">
+                        <BsInstagram />
+                    </a>
+                    <a href="/">
+                        <BsFacebook />
+                    </a>
+                    <a href="/">
+                        <BsTwitter />
+                    </a>
+                    <a href="/">
+                        <BsLinkedin />
+                    </a>
+                </div>
             </div>
         </div>
     )
