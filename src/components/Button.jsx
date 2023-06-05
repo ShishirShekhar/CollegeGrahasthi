@@ -1,15 +1,17 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-const Button = (props) => {
-    return (
-        <div className="rounded-xl bg-gradient-to-r from-primary to-secondary hover:bg-gradient-to-l w-full hover:cursor-pointer">
-            <p className="text-center py-4">
-                <Link to={props.to}>
-                    {props.value}
-                </Link>
-            </p>
-        </div>
-    )
-}
+const Button = ({ to, value }) => {
+  return (
+    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-lg">
+      <Link
+        to={to}
+        className="block bg-gradient-to-r from-primary to-secondary text-white text-center py-3 px-4 font-semibold transition-all duration-300"
+      >
+        {value}
+      </Link>
+    </div>
+  );
+};
 
 export default Button;
