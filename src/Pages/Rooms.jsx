@@ -14,9 +14,15 @@ const Rooms = () => {
       </div>
 
       <div className="flex justify-between px-10 mt-8 w-full">
-        <div>
+        <div className="">
           <Filter />
-          <RoomsCard />
+          <div className="flex flex-col gap-10 pb-10">
+            <RoomsCard />
+            <RoomsCard />
+            <RoomsCard />
+            <RoomsCard />
+            <RoomsCard />
+          </div>
         </div>
         <div className="w-1/3">
           <Map />

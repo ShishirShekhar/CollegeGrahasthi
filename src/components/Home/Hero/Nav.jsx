@@ -38,7 +38,7 @@ const Nav = () => {
         <div className="flex items-center justify-between space-x-4 mx-auto">
           <Link to="/other">Solutions</Link>
           <Link to="/other">Company</Link>
-          <Link to="/other">Rooms</Link>
+          <Link to="/rooms">Rooms</Link>
           <Link to="/other">Contact us</Link>
         </div>
         <div className="w-full flex justify-center md:w-auto">
@@ -57,7 +57,7 @@ const Nav = () => {
       >
         <Link to="/other">Solutions</Link>
         <Link to="/other">Company</Link>
-        <Link to="/other">Rooms</Link>
+        <Link to="/rooms">Rooms</Link>
         <Link to="/other">Contact us</Link>
         <Button value="Sign up" to="/other" />
       </div>
