@@ -13,7 +13,7 @@ const Rooms = () => {
         <Search value="Search by city name, area, or property" />
       </div>
 
-      <div className="flex justify-between px-10 mt-8 w-full">
+      <div className="lg:flex justify-between px-10 mt-8 w-full">
         <div className="">
           <Filter />
           <div className="flex flex-col gap-10 pb-10">
@@ -24,7 +24,8 @@ const Rooms = () => {
             <RoomsCard />
           </div>
         </div>
-        <div className="w-1/3">
+
+        <div className="hidden lg:block w-1/3">
           <Map />
         </div>
       </div>
