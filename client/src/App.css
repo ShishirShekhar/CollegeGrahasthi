@@ -1,8 +1,13 @@
 .section {
   min-height: 100vh;
-  padding: 0 2rem;
 }
 
 .logo {
   width: 5rem;
+}
+
+@media screen and (min-width: 426px) {
+  .section {
+    padding: 0 2rem;
+  }
 }
