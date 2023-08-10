@@ -1,3 +1,4 @@
+import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav";
 import Filter from "../components/Rooms/Filter";
 import Map from "../components/Rooms/Map";
@@ -29,6 +30,8 @@ const Rooms = () => {
           <Map />
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
