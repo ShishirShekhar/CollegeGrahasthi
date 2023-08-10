@@ -7,7 +7,7 @@ import hero from "../../assets/hero.png";
 
 const Hero = () => {
   return (
-    <Box sx={{ background: `url(${hero})`, minHeight: "100vh" }}>
+    <Box className="section" sx={{ background: `url(${hero})`}}>
       <Nav />
     </Box>
   );
