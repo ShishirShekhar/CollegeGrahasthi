@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import ImageCarousel from "../components/Room/ImageCarousel";
 import Button from "../components/Button";
 import SecButton from "../components/SecButton";
+import Ratings from "../components/Home/Ratings/Ratings";
 
 const Room = () => {
   return (
@@ -122,6 +123,8 @@ const Room = () => {
           vitae ratione maiores modi consequuntur. Veritatis, deserunt.
         </p>
       </div>
+
+      <Ratings />
 
       <Footer />
     </div>
