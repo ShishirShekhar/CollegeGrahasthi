@@ -1,9 +1,14 @@
-import React from 'react'
+// Import required modules
+import { Box } from "@mui/material";
+// Import required components
+import Hero from "../components/Home/Hero";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <Box>
+      <Hero />
+    </Box>
+  );
+};
 
-export default Home
+export default Home;
