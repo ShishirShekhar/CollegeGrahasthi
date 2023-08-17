@@ -35,7 +35,7 @@ const Rooms = () => {
           <div className="flex flex-col gap-10 pb-10">
             {rooms?.length > 0 &&
               rooms.map((room) => {
-                return <RoomsCard key={room._id} room={room} />;
+                return <RoomsCard key={room._id} details={room} />;
               })}
           </div>
         </div>
