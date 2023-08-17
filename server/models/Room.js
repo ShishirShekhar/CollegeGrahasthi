@@ -27,7 +27,7 @@ const schema = mongoose.Schema({
   rating: {
     type: Number,
     validate: function (val) {
-      return val > 0 && val < 6;
+      return val >= 0 && val <= 5;
     },
     message: "Rating should be between 0 and 6",
     default: 0,
