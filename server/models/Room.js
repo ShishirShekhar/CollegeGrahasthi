@@ -30,6 +30,7 @@ const schema = mongoose.Schema({
       return val > 0 && val < 6;
     },
     message: "Rating should be between 0 and 6",
+    default: 0,
   },
   reviews: {
     type: Number,
