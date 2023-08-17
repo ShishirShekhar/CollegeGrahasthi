@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 });
 
 // Use the routes middleware
-app.use("/api/v1/user", userRoutes);
-app.use("/api/v1/room", roomRoutes);
+app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/rooms", roomRoutes);
 
 module.exports = app;
