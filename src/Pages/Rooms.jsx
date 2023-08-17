@@ -1,11 +1,26 @@
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer/Footer";
 import Nav from "../components/Nav";
 import Filter from "../components/Rooms/Filter";
 import Map from "../components/Rooms/Map";
 import RoomsCard from "../components/Rooms/RoomsCard";
 import Search from "../components/Search";
+import axios from "axios";
 
 const Rooms = () => {
+  const [rooms, setRooms] = useState();
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:8000/api/v1/rooms")
+      .then((response) => {
+        setRooms(response.data.rooms.rooms);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  });
+
   return (
     <div className="min-h-screen">
       <Nav />
