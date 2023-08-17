@@ -33,7 +33,7 @@ const Rooms = () => {
         <div className="">
           <Filter />
           <div className="flex flex-col gap-10 pb-10">
-            {rooms.length > 0 &&
+            {rooms?.length > 0 &&
               rooms.map((room) => {
                 return <RoomsCard key={room._id} room={room} />;
               })}
